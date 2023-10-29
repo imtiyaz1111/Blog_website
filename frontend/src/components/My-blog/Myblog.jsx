@@ -8,7 +8,7 @@ const Myblog = () => {
   const getUserBlogs = async () => {
     try {
       const id = localStorage.getItem("userId");
-      const res= await fetch(`http://localhost:8000/api/v1/blog/user-blog/${id}`)
+      const res= await fetch(`https://blog-website-neon-one.vercel.app/api/v1/blog/user-blog/${id}`)
       const data=await res.json();
       if(data?.success)
       {
