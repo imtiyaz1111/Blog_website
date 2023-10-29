@@ -72,7 +72,7 @@ const Register = () => {
 
   const signupUser = async () => {
     const { name, username, password } = signup;
-    const res = await fetch("http://localhost:8000/api/v1/user/register", {
+    const res = await fetch("https://blog-website-neon-one.vercel.app/api/v1/user/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
