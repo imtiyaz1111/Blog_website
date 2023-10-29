@@ -11,7 +11,7 @@ const BlogDetails = () => {
   // get blog details
   const getBlogDetail = async () => {
     try {
-      const res = await fetch(` http://localhost:8000/api/v1/blog/get-blog/${id}`);
+      const res = await fetch(` https://blog-website-neon-one.vercel.app/api/v1/blog/get-blog/${id}`);
       const data=await res.json();
       if(!data)
       {
@@ -47,7 +47,7 @@ const BlogDetails = () => {
     e.preventDefault();
     try {
       const {title,description,image}=inputs;
-      const res = await fetch(`http://localhost:8000/api/v1/blog/update-blog/${id}`, {
+      const res = await fetch(`https://blog-website-neon-one.vercel.app/api/v1/blog/update-blog/${id}`, {
         method: "PUT",
         headers:{
           "Accept":"application/json",
