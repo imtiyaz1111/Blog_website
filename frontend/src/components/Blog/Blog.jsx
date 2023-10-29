@@ -7,7 +7,7 @@ const Blog = () => {
   //get blogs
   const getAllBlogs = async () => {
     try {
-     const res= await fetch("http://localhost:8000/api/v1/blog/all-blog")
+     const res= await fetch("https://blog-website-neon-one.vercel.app/api/v1/blog/all-blog")
      const data=await res.json();
     //  if(data)
     //  {
