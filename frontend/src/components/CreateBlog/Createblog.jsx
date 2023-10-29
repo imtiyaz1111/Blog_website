@@ -21,7 +21,7 @@ const Createblog = () => {
     e.preventDefault();
     try {
       const {title,description,image}=inputs;
-      const res = await fetch("http://localhost:8000/api/v1/blog/create-blog", {
+      const res = await fetch("https://blog-website-neon-one.vercel.app/api/v1/blog/create-blog", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
