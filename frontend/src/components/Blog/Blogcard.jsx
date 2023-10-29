@@ -30,7 +30,7 @@ export default function BlogCard({
 
   const handleDelete = async () => {
     try {
-      const res= await fetch(`http://localhost:8000/api/v1/blog/delete-blog/${id}`,{
+      const res= await fetch(`https://blog-website-neon-one.vercel.app/api/v1/blog/delete-blog/${id}`,{
         method:"DELETE"
       });
       const data = await res.json();
